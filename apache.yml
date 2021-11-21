@@ -2,11 +2,6 @@
 - hosts: webservers 
   become: True
   tasks:
-    - name: Start Apache server
-      service:
-        name: httpd
-        state: started
-        enabled: True
     - name: Deploy static website
       copy:
         src: index.php
