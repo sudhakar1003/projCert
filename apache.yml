@@ -4,5 +4,5 @@
   tasks:
     - name: Deploy static website
       copy:
-        src: index.php
+        src: ./index.php
         dest: /var/www/html/
